@@ -73,10 +73,8 @@
   /* Custom Button2 */
   .custom-button2 {
     background-color: #000000;
-    padding: 0.50rem 1.5rem;
     border-radius: 0.75rem;
     color: #ffffff;
-    font-weight: bold;
     border: none;
   }
   
@@ -103,3 +101,6 @@
 p {
   animation: fadeIn 1s ease forwards;
 }
+
+
+/* Loader */
