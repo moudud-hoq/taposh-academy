@@ -1,3 +1,14 @@
+/* Logo */
+.special-logo {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.special-logo:hover {
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1) rotate(-10deg);
+}
+
+
 /* Title */
 .animate-charcter {
   text-transform: uppercase;
@@ -44,4 +55,51 @@
     width: 100%;
     animation: typing 5s steps(50, end) reverse;
   }
+
+
+  /* Custom Button */
+  .custom-button {
+    background-color: #eeff00;
+    padding: 0.50rem 1.5rem;
+    border-radius: 0.75rem;
+    color: #000000;
+    font-weight: bold;
+    border: none;
+  }
   
+  .custom-button:hover {
+    background-color: #f0f0f0;
+  }
+  /* Custom Button2 */
+  .custom-button2 {
+    background-color: #000000;
+    padding: 0.50rem 1.5rem;
+    border-radius: 0.75rem;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+  }
+  
+  .custom-button:hover {
+    background-color: #f0f0f0;
+  }
+  
+
+
+  /* AboutUs Style */
+ /* CSS for text animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation to the paragraph */
+p {
+  animation: fadeIn 1s ease forwards;
+}

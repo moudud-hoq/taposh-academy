@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taposh Academy</title>
+
+    <!-- Style File added -->
+    <link rel="stylesheet" href="./Styles/Main.css" />
+
+    <!-- Tailwind and daisy UI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- manrope google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/d7b7563d24.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- tailwind custom color -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "gradient-start": "#FF8938",
+              "gradient-end": "#F00",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="min-h-screen bg-slate-300 flex flex-col justify-center items-center p-5 md:p-40"
+  >
+    <h1 class="mb-5 text-xl md:text-5xl font-bold leading-6 animate-charcter">
+      Welcome to Taposh Academy <br />
+      <span class="text-xl"> যেকোনো পড়া কঠিন করে নয়, সহজ করে পড়ুন। </span>
+    </h1>
+    <p class="typing-text">
+      আমদের উদ্দেশ্য ছাত্রছাত্রীদের মুখস্থ নয় বরং কৌশল অবলম্বনের মাধমে পড়া মনে
+      রাখার ব্যাপারে উৎসাহিত করা। আমরা প্রতিনিয়ত আমাদের Taposh Academy ইউটিউব
+      চ্যানেলে এবং ফেইসবুক পেইজে বাংলা, ইংরেজি, সাধারণ জ্ঞান (জিকে) পর্যায়ক্রমে
+      বিভিন্ন বিষয়ের উপর অসাধারণ কৌশল, সাজেশন এর ভিডিও পাবলিশ করছি, এছাড়াও
+      আমাদের অসংখ্য ছাত্রছাত্রীদের কমিউনিটিতে যুক্ত হওয়ার জন্য আমাদের ফেইসবুক
+      পেইজ এবং গ্রুপে ভিজিট করতে পারেন।
+    </p>
+    <div class="flex justify-center items-center flex-col md:flex-row gap-5">
+      <a href="https://www.youtube.com/@TaposhAcademy" class="custom-button"
+        >Youtube</a
+      >
+      <a
+        href="https://www.facebook.com/groups/TaposhAcademy"
+        class="custom-button"
+      >
+        Facebook Group</a
+      >
+      <a href="https://www.facebook.com/TaposhAcademy" class="custom-button">
+        Facebook Page</a
+      >
+    </div>
+  </body>
+</html>

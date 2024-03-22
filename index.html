@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,7 +7,8 @@
 
     <!-- Style File added -->
     <link rel="stylesheet" href="./Styles/Main.css" />
-    <!-- tailwind and daisy UI -->
+
+    <!-- Tailwind and daisy UI -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css"
       rel="stylesheet"
@@ -44,11 +45,11 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="container mx-auto px:3 md:px-20 text-white">
-      <div class="navbar bg-[#1a2529]">
+    <nav class="shadow-xl rounded-lg">
+      <div class="navbar">
         <div class="navbar-start">
           <div class="dropdown">
-            <div tabindex="0" role="button" class="lg:hidden">
+            <div tabindex="0" role="" class="lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-5 w-5"
@@ -68,58 +69,63 @@
               tabindex="0"
               class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
-              <li><a>Item 1</a></li>
+              <li><a href="./AboutUs.html" target="_blank">About Us</a></li>
               <li>
-                <a>Parent</a>
+                <a>Our Courses</a>
                 <ul class="p-2">
-                  <li><a>Submenu 1</a></li>
-                  <li><a>Submenu 2</a></li>
+                  <li><a>HSC</a></li>
+                  <li><a>University Addmission</a></li>
                 </ul>
               </li>
-              <li><a>Item 3</a></li>
+              <li><a>Contact Us</a></li>
             </ul>
           </div>
-          <a class="btn btn-ghost text-xl">Taposh Academy</a>
+          <a
+            class="ml-5 text-2xl font-bold text-blue-400 transform hover:scale-105 transition-transform duration-300 special-logo"
+            >Taposh Academy</a
+          >
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
-            <li><a>Item 1</a></li>
+            <li><a href="./AboutUs.html" target="_blank">About Us</a></li>
             <li>
               <details>
-                <summary>Parent</summary>
+                <summary>Our Courses</summary>
                 <ul class="p-2">
-                  <li><a>Submenu 1</a></li>
-                  <li><a>Submenu 2</a></li>
+                  <li><a>HSC</a></li>
+                  <li><a>University Addmission</a></li>
                 </ul>
               </details>
             </li>
-            <li><a>Item 3</a></li>
+            <li><a>Contact Us</a></li>
           </ul>
         </div>
         <div class="navbar-end">
           <a
-            class="btn"
+            class="py-2 px-4 mr-3 bg-slate-200 rounded-lg"
             href="https://forms.gle/pknHHSSQY4h5igzx8"
             target="_blank"
-            >ভর্তি হতে ক্লিক করুন</a
+            >কোর্স কিনুন</a
           >
         </div>
       </div>
     </nav>
 
     <!-- Hero -->
-    <div class="container mx-auto px:3 md:px-20">
-      <div class="hero" style="background-image: url(Images/1.png)">
-        <div class="hero-overlay bg-opacity-80"></div>
+    <div class="rounded-b-2xl">
+      <div class="rounded-b-2xl">
+        <div class="hero-overlay rounded-b-2xl"></div>
         <div class="hero-content text-center text-neutral-content">
-          <div class="md:px-32 py-16">
-            <h1 class="mb-5 text-2xl md:text-5xl font-bold leading-6 animate-charcter">
+          <div class="md:px-32 py-5 md:py-16">
+            <h1
+              class="mb-5 text-xl md:text-5xl font-bold leading-6 animate-charcter"
+            >
               Welcome to Taposh Academy <br />
-              <span class="text-2xl">
+              <span class="text-xl">
                 যেকোনো পড়া কঠিন করে নয়, সহজ করে পড়ুন।
               </span>
             </h1>
-            <p class="mb-5 text-xs md:text-lg typing-effect">
+            <p class="mb-5 text-xs typing-effect text-black">
               আমদের উদ্দেশ্য ছাত্রছাত্রীদের মুখস্থ নয় বরং কৌশল অবলম্বনের মাধমে
               পড়া মনে রাখার ব্যাপারে উৎসাহিত করা। আমরা প্রতিনিয়ত আমাদের Taposh
               Academy ইউটিউব চ্যানেলে এবং ফেইসবুক পেইজে বাংলা, ইংরেজি, সাধারণ
@@ -129,34 +135,120 @@
               করতে পারেন।
             </p>
             <div>
-              <button class="btn btn-primary">Click</button>
-              <button class="btn btn-primary">Click</button>
-              <button class="btn btn-primary">Click</button>
+              <button class="custom-button">
+                <a href="https://www.youtube.com/@TaposhAcademy" target="_blank"
+                  >Youtube</a
+                >
+              </button>
+              <button class="custom-button">
+                <a href="https://www.facebook.com/TaposhAcademy" target="_blank"
+                  >FB Page</a
+                >
+              </button>
+              <button class="custom-button">
+                <a
+                  href="https://www.facebook.com/groups/TaposhAcademy"
+                  target="_blank"
+                  >FB Group</a
+                >
+              </button>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Card -->
-    <div class="container mx-auto px:3 md:px-20">
-      <div class="card w-96 bg-base-100 shadow-xl">
-        <figure class="px-10 pt-10">
+    <!-- Cards -->
+    <div class="container mx-auto py-5 grid grid-cols-1 md:grid-cols-2 gap-5">
+      <!-- Single Card -->
+      <div class="card bg-[#1574b3] shadow-xl h-72 md:h-96">
+        <figure class="">
           <img
-            src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+            width="700px"
+            src="Images/2.png"
             alt="Shoes"
             class="rounded-xl"
           />
         </figure>
         <div class="card-body items-center text-center">
-          <h2 class="card-title">Shoes!</h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
           <div class="card-actions">
-            <button class="btn btn-primary">Buy Now</button>
+            <button class="custom-button2">কোর্স কিনুন</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card bg-[#1574b3] shadow-xl h-72 md:h-96">
+        <figure class="">
+          <img
+            width="700px"
+            src="Images/3.png"
+            alt="Shoes"
+            class="rounded-xl"
+          />
+        </figure>
+        <div class="card-body items-center text-center">
+          <div class="card-actions">
+            <button class="custom-button2">কোর্স কিনুন</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card bg-[#1574b3] shadow-xl h-72 md:h-96">
+        <figure class="">
+          <img
+            width="700px"
+            src="Images/4.png"
+            alt="Shoes"
+            class="rounded-xl"
+          />
+        </figure>
+        <div class="card-body items-center text-center">
+          <div class="card-actions">
+            <button class="custom-button2">কোর্স কিনুন</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card bg-[#1574b3] shadow-xl h-72 md:h-96">
+        <figure class="">
+          <img
+            width="700px"
+            src="Images/5.png"
+            alt="Shoes"
+            class="rounded-xl"
+          />
+        </figure>
+        <div class="card-body items-center text-center">
+          <div class="card-actions">
+            <button class="custom-button2">কোর্স কিনুন</button>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- Footer -->
+    <footer
+      class="footer h-24 p-4 bg-neutral text-neutral-content flex flex-col md:flex-row justify-center items-center gap-5"
+    >
+      <aside class="items-center grid-flow-col">
+        <a
+          class="ml-5 text-2xl font-bold text-yellow-400 transform hover:scale-105 transition-transform duration-300 special-logo"
+          >Taposh Academy</a
+        >
+        <p>Copyright © 2024 - All right reserved</p>
+      </aside>
+      <nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+        <a href="https://www.youtube.com/@TaposhAcademy" target="_blank"
+          ><i class="fa-brands fa-youtube fa-2xl"></i
+        ></a>
+        <a href="https://www.facebook.com/TaposhAcademy" target="_blank"
+          ><i class="fa-brands fa-facebook fa-2xl"></i
+        ></a>
+        <a href="https://www.facebook.com/TaposhAcademy" target="_blank"
+          ><i class="fa-brands fa-facebook fa-2xl"></i
+        ></a>
+      </nav>
+    </footer>
 
     <!-- JS -->
     <script src="./"></script>
